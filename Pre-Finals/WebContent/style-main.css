@@ -1,0 +1,165 @@
+body{
+	
+	margin:0;
+	background:#fff;
+	
+}
+button{
+	 border:0;
+	 outline:none;
+	 background:#009900;
+	 padding:5px 16px;
+	 margin-left:70%;
+	 margin-top:5%;
+	 font-family:Verdana;
+	 font-weight:3px;
+	 color:#fff;
+	 font-size:18px;
+	 cursor:pointer;
+	 box-shadow:0px 4px 7px #444;
+	 transition:background 0.3s linear 0s,color 0.3s linear 0s;
+}
+button:hover{
+	 box-shadow:3px 3px 10px rgba(0,0,0,0.7);
+	 background:#fff;
+	 color:#009900;
+}
+div#welcome-stub{
+	 background:#000;
+	 position:fixed;
+	 /*animation:slideUp 1s;
+	 animation-delay:1s;*/
+	 display:block;
+}
+div#welcome-stub > img{
+	 margin:3px auto;
+}
+div#welcome-stub > p#first{
+	 font-family:Verdana;
+	 color:#e65c00;
+	 font-size:36px;
+	 display:none;
+	 font-weight:bolder;
+	 margin:5% auto;
+}
+div#welcome-stub > p{
+	 font-family:Verdana;
+	 color:#fff;
+	 font-size:36px;
+	 font-weight:bolder;
+	 display:none;
+	 width:400px;
+	 margin:5% auto;
+}
+div#welcome-stub > button#enter-btn{
+	 border-radius:5px;
+	 background:#e65c00;
+	 color:#fff;
+	 font-family:Verdana;
+	 font-size:16px;
+	 padding:5px;
+	 display:none;
+	 border:0px;
+}
+div#welcome-stub > button#enter-btn:active{
+	 background:#b34700;
+}
+div#menu-deck{
+	
+	background:black;
+	font-family:Verdana;
+	color:#fff;
+	font-size:30px;
+	width:100%;
+	padding:7px;
+	box-shadow:0px 5px 7px #444;
+	
+}
+div#menu-deck > img{
+	
+	 height:30px;
+	 width:15px;
+}
+div#menu-deck > a{
+	margin-left:60%;
+	font-size:18px;
+	font-weight:1px;
+	padding:5px;
+	color:#fff;
+	text-decoration:none;
+	transition:background 0.3s linear 0s, color 0.3s linear 0s;
+}
+div#menu-deck > a:last-child{
+	 margin-left:1%;
+}
+div#menu-deck > a:hover{
+	 color:#000;
+	 background:#fff;
+}
+
+div#info-desk{
+	 margin:5% auto 0;
+	 padding:7%;
+	 width:700px;
+	 box-shadow:0px 6px 10px #666;
+}
+div#info-desk > img{
+	 float:left;
+	 margin:7px;
+	 width:30%;
+	 height:auto;
+}
+div#info-desk > div#info{
+	 text-align:center;
+	 font-family:Verdana;
+	 color:#000;
+	 
+}
+div#reg-desk{
+	 background:#fff;
+	 border-radius:7px;
+	 padding:10px;
+	 box-shadow:0px 5px 10px rgba(0,0,0,0.4);
+	 margin:40px auto;
+	 width:500px;
+	 display:none;
+	 z-index:3001;
+}
+div#reg-desk > h1{
+	font-family:Verdana;
+	color:#fff;
+	background:#00cc00;
+	padding:7px;
+	box-shadow:3px 3px 7px rgba(0,0,0,0.4);
+}
+
+div#reg-desk> form > input{
+	 background:#ccc;
+	 outline:none;
+	 border:none;
+	 margin:9px auto;
+	 border-radius:7px;
+	 width:100%;
+	 text-align:center;
+	 height:50px;
+	 font-size:16px;
+	 font-family:verdana;
+	 transition:outline 0.3s linear 0s;
+	 
+}
+div#reg-desk> form > input:focus{
+	outline:2px solid #4285F4;
+}
+div#reg-desk> button#close-reg-desk{
+	background:none;
+	margin-left:94%;
+	font-family:Helvetica;
+	color:#666;
+	font-size:16px;
+	font-weight:bold;
+	cursor:pointer;
+	border:0;
+	outline:0;
+	text-shadow:3px 3px 4px #ccc;
+	box-shadow:none;
+}

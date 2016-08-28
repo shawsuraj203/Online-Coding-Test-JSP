@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	 <head>
+
+		 <title>Encoding-Welcome</title>
+		 <meta charset="UTF-8"/>
+		 <link rel="stylesheet" type="text/css" href="style-main.css" />
+		 <script type="text/javascript" src="jquery-2.2.1.min.js"></script>
+		 <script type="text/javascript">
+function validateForm(){
+var mob = parseInt(document.getElementById("mob").value ,10 ) || 0;
+	for(var i =1 ;i<10;i++){
+		if(i!=10 && mob<10)
+			{
+				alert("Not a Valid Phone No");
+				return false;
+			}
+		mob /= 10;
+	}
+	return true;
+}
+
+</script>
+		 <script>
+			 var wth=window.innerWidth;
+			 var height=window.innerHeight;
+			 var wel=document.getElementById("welcome-stub");
+			 $(document).ready(function(){
+				 $("#welcome-stub").css("width",wth+"px");
+				 $("#welcome-stub").css("height",height+"px");
+				 $("#first").delay(100).fadeIn();
+				 $("#second").delay(2200).fadeIn();
+				 $("#enter-btn").delay(2600).fadeIn();
+			 });
+			 $(document).ready(function(){
+				 $("#enter-btn").click(function(){
+					 $("#welcome-stub").slideUp();
+				 });
+			 });
+			 wel.style.width=wth+"px";
+			 wel.style.height=height+"px";
+			 $(document).ready(function(){
+				$("#welcome-stub").slideUp();
+			 });
+			 function popupRegWin(){
+				 $("#info-desk").fadeOut(300);
+				 $("#reg-desk").delay(400).fadeIn();
+			 }
+			 function closeupRegWin(){
+				 $("#reg-desk").fadeOut(300);
+				 $("#info-desk").delay(400).fadeIn();
+			 }
+		 </script>
+		 <link rel="icon" type="image/icon" href="DNA strand.png" />
+	 </head>
+	 
+	 <body>
+		<div id="welcome-stub"><img src="logo.svg"/><p id="first">Avenir Presents</p>
+		<p id="second">Encoding</p>
+		<button id="enter-btn">ENTER>></button>
+		</div>
+		<div id="menu-deck"><img src="DNA strand.png"/>
+			Encoding
+			<a href="http://www.avenir2016.com">About</a>
+			<a href="Encoding.pdf" target="_blank">Rules and Regulations</a>
+		</div>
+		 <div id="info-desk">
+			 <img src="Monitor.png" />
+			 <div id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et orci non sem venenatis facilisis eget a diam. Quisque porta purus a rhoncus faucibus. Vestibulum in ultricies justo. Donec aliquet lorem tristique aliquam iaculis. Maecenas egestas ac eros commodo rutrum. Vivamus maximus, enim vitae venenatis feugiat, erat ex consectetur erat, ut volutpat velit augue sit amet lacus. Nunc placerat est sed elit bibendum tempor. Suspendisse a mattis magna. Curabitur a urna eget leo lacinia aliquam. Aliquam erat volutpat. Quisque vel tellus in eros mattis sollicitudin. Phasellus non pharetra purus. Nulla aliquet posuere odio, sed sodales ex aliquet eu. 
+			 <br/><button id="reg-btn" onClick="javascript:popupRegWin()">Register</button>
+			 </div>
+			 
+			 
+		 </div>
+		 <div id="reg-desk">
+				 <button id="close-reg-desk" onclick="javascript:closeupRegWin()">x</button>
+				 <h1>Register</h1>
+				 <form action="log.jsp?choice=1" onSubmit="return validateForm()">
+				 <input type="text" id="team-name" placeholder="Team Name" name="tn"/>
+				 <input type="email" id="team-mem-name" placeholder="EMAIL" name="email"/>
+				 <input type="tel" id="ph-no" placeholder="Phone number" name="mob"/>
+				 <button id="submit">Submit</button>
+				 </form>
+			 </div>
+			 <footer>Designed by Jeet Dutta</footer>
+	 </body>
+
+</html>
